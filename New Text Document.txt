@@ -35,3 +35,52 @@ namespace ConsoleApp2
        
 
     }
+    
+    
+    // task 2 araligin cemi
+    
+    
+    using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("a : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("b: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"{a} ve {b} arasinda olan ededlerin cemi {Middle(a, b)}");
+
+            static int Middle(int a, int b)
+            {
+                int sum = 0;
+
+                if (a < b)
+               {
+                    for (; a <= b; a++)
+                    {
+                        sum = sum + a;
+                    }
+
+                }
+                else if (a == b)
+                {
+                    Console.WriteLine("reqemler beraberdir");
+                }
+                else
+                {
+                    Console.WriteLine("birinci reqem ikinciden kicik olmalidir");
+                }
+                return sum;
+            }
+
+
+        }
+    }
+}
